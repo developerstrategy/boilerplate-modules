@@ -1,0 +1,35 @@
+
+
+
+<li class="backdrop-blur-md">
+<a class="w-100" href="{{ blog.url }}"> 
+  <div class="mb-24">
+    <div class="row">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-8 ">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="rat-16-9 w-100 rad-12">
+          <div class="rat-content">
+            <img class="video-cover" width="100%" height="auto" src="{{blog.data.image }}"
+              alt="{{blog.data.imageAlt }}" class="h1">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12  ">
+        <div class="pt-32 ">
+          <h3 class="fluid-8-b mb-16">{{blog.data.title }} </h3>
+          <h3 class="fluid-9-r"> {{blog.data.subtitle }}</h3>
+          <p class=" mbr-64 ">{{blog.data.description }}</p>
+          <p class="mb-8  text-12-r c-dark-grey pt-24">{{blog.data.date | postDate }}</span></p>
+
+        </div>
+      </div>
+    </div>
+
+  </a>
+</li>

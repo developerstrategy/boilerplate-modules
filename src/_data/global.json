@@ -1,0 +1,120 @@
+{
+
+  "title": "Boilerplate",
+  "lang": "es-es",
+  "footer": "",
+  "url": "theboilerplate.netlify.app",
+
+  "tag_manager": "GTM-.....R",
+
+  "home": "Inicio",
+  "about": "Nosotros",
+  "services": "Servicios",
+  "blog": "blog",
+  "contact": "Contacta",
+
+  "search_console":"FhDVkzNg9SOK2fZVNWr_qpYTxFLBzVxCHYOe1vFnr5s",
+
+
+  "empresa_legal": "nombre sl",
+  "empresa_corto":  "nombre sl",
+  "website": "www.",
+  "telefono":" +34.......",
+  "empresa_dni": "B.......",
+  "email":"info@bolierplate.com",
+  "whatsapp": "+34.......",
+
+  "direction": " Direccion",
+  "empresa_legal_direccion": "empresa legal direccion",
+  "direction_link": "link de direccion",
+  "contacta_map":"https://www.google.com/maps/place/.......",
+  
+  "empresa_copyright":" © 2023 Boilerplate",
+
+
+  "author": "manuel ruiz",
+  "authorweb": "design-systems.es",
+  "authorinstagram": "manuel ruiz",
+
+  "empresa": "design systems",
+  "imageDir": "/assets/static/images/",
+
+  "brands": "1,2,3,4,5,6",
+  "galeria": "1,2,3,4,5,6,7,8",
+  "contact_img": "/assets/static/images/1.webp",
+
+  "empresa_legal_titular": "empresa_legal_titular ",
+
+
+  "link": "design-systems.es",
+
+  "codigopostal": "0000",
+  "direccion": " calle",
+  "ciudad": " barcelona",
+  "provincia": "Barcelona",
+  "actividad": " design systems",
+
+
+  "home_image":"",
+
+
+  "c_gray": "#727272",
+  "c_primary": "#000000",
+  "c_secondary": "#000000",
+  "c_accent": "#ff0000",
+  "bg_dark": "#1D1E23",
+
+  "bg_light": "#f3f2f0",
+
+
+  "c_bg_light": "#2b2a28",
+  "c_bg_dark": "#f7f6f5",
+
+
+  "btn_radius": "50px",
+  "padding-global": "16px",  
+
+
+
+  "seo_title": "seo_title",
+  "seo_description": "seo_description",
+  "googlemaps_api": "",
+  "googlemaps_link": "",
+  "googlemaps_iframe": "",
+  "social_linkedin": " https://www.linkedin.com/",
+  "social_youtube": "https://www.youtube.com/",
+  "social_instagram": "https://www.instagram.com/",
+
+  "banner_title": "Contáctanos",
+  "banner_text": "¡Intenta tener tu móvil cerca de ti porque te llamaremos!",
+  "banner_claim": "¡Una vez te unas a nosotros tu clínica solo tendrá ganacias! ",
+  "banner_button": "enviar",
+
+
+
+
+
+  "personas": [
+    {
+      "imagen": "/assets/static/images/person1.webp",
+      "nombre": "Persona 1",
+      "posicion": "Posición 1",
+      "descripcion": "Descripción 1"
+    },
+    {
+      "imagen": "/assets/static/images/person2.webp",
+      "nombre": "Persona 2",
+      "posicion": "Posición 2",
+      "descripcion": "Descripción 2"
+    },
+    {
+      "imagen": "/assets/static/images/person3.webp",
+      "nombre": "Persona 3",
+      "posicion": "Posición 3",
+      "descripcion": "Descripción 3"
+    }
+  ]
+
+
+
+}

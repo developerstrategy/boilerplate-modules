@@ -1,0 +1,8 @@
+
+{
+	"layout": "_cursoinner.njk",
+	"author": "Manuel Ruiz",
+	"tags": ["blog"],
+	"tag": "blog",
+	"categoryName": "Blog"
+}
