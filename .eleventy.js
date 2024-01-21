@@ -32,6 +32,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("myShortcode", function (content) { // Method A: ✅ ideal para encapsular {% myShortcode %}  dfdfdf  {% endmyShortcode %}
     return `<div class="is-flex full-container-blog content-center">${content}</div>`;
   });
+
+  
   eleventyConfig.addShortcode("br", function () { // Method A: ✅ ideal para tags de espacios {% br %}
     return `
   <br>
@@ -47,6 +49,10 @@ module.exports = function (eleventyConfig) {
   <br><br><br>
 `;
   });
+
+  eleventyConfig.addFilter("wrapWithDiv", function(markdownString) {
+    return markdownString.replace(/--(.*?)--/g, '<div class="bold">$1</div>');
+});
 
 
   eleventyConfig.addPlugin(embeds);
