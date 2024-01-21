@@ -1,81 +1,53 @@
 {
-
   "title": "Boilerplate",
   "lang": "es-es",
   "footer": "",
   "url": "theboilerplate.netlify.app",
-
   "tag_manager": "GTM-.....R",
-
   "home": "Inicio",
   "about": "Nosotros",
   "services": "Servicios",
   "blog": "blog",
   "contact": "Contacta",
-
-  "search_console":"FhDVkzNg9SOK2fZVNWr_qpYTxFLBzVxCHYOe1vFnr5s",
-
-
+  "search_console": "FhDVkzNg9SOK2fZVNWr_qpYTxFLBzVxCHYOe1vFnr5s",
   "empresa_legal": "nombre sl",
-  "empresa_corto":  "nombre sl",
+  "empresa_corto": "nombre sl",
   "website": "www.",
-  "telefono":" +34.......",
+  "telefono": " +34.......",
   "empresa_dni": "B.......",
-  "email":"info@bolierplate.com",
+  "email": "info@bolierplate.com",
   "whatsapp": "+34.......",
-
   "direction": " Direccion",
   "empresa_legal_direccion": "empresa legal direccion",
   "direction_link": "link de direccion",
-  "contacta_map":"https://www.google.com/maps/place/.......",
-  
-  "empresa_copyright":" © 2023 Boilerplate",
-
-
+  "contacta_map": "https://www.google.com/maps/place/.......",
+  "empresa_copyright": " © 2023 Boilerplate",
   "author": "manuel ruiz",
   "authorweb": "design-systems.es",
   "authorinstagram": "manuel ruiz",
-
-  "empresa": "design systems",
+  "empresa": "the boilerplate",
   "imageDir": "/assets/static/images/",
-
   "brands": "1,2,3,4,5,6",
   "galeria": "1,2,3,4,5,6,7,8",
-  "contact_img": "/assets/static/images/1.webp",
-
+  "contact_img": "/assets/static/images/1.jpg",
   "empresa_legal_titular": "empresa_legal_titular ",
-
-
   "link": "design-systems.es",
-
   "codigopostal": "0000",
   "direccion": " calle",
   "ciudad": " barcelona",
   "provincia": "Barcelona",
-  "actividad": " design systems",
-
-
-  "home_image":"",
-
-
+  "actividad": " the boilerplate",
+  "home_image": "",
   "c_gray": "#727272",
   "c_primary": "#000000",
   "c_secondary": "#000000",
   "c_accent": "#ff0000",
   "bg_dark": "#1D1E23",
-
   "bg_light": "#f3f2f0",
-
-
   "c_bg_light": "#2b2a28",
   "c_bg_dark": "#f7f6f5",
-
-
   "btn_radius": "50px",
-  "padding-global": "16px",  
-
-
-
+  "padding-global": "16px",
   "seo_title": "seo_title",
   "seo_description": "seo_description",
   "googlemaps_api": "",
@@ -84,37 +56,65 @@
   "social_linkedin": " https://www.linkedin.com/",
   "social_youtube": "https://www.youtube.com/",
   "social_instagram": "https://www.instagram.com/",
-
   "banner_title": "Contáctanos",
   "banner_text": "¡Intenta tener tu móvil cerca de ti porque te llamaremos!",
-  "banner_claim": "¡Una vez te unas a nosotros tu clínica solo tendrá ganacias! ",
+  "banner_claim": "Garantía de 7 días Con un correo electrónico o solicitud, recibes el 100% de tu inversión de vuelta. ",
   "banner_button": "enviar",
 
+  "introCta_type": "introCta_type",
+  "introCta_title": "introCta_title",
+  "introCta_description": "introCta_description",
+  "introCta_cta": "introCta_cta",
+  "introCta_cta_link": "introCta_cta_link",
+  "introCta_image": "introCta_image",
+  "introCta_bg_image": "introCta_bg_image",
 
+  "why_type": "why_type",
+  "why_title": "why_title",
+  "why_description": "why_description",
+  "why_cta": "why_cta",
+  "why_cta_link": "why_cta_link",
+  "why_image": "why_image",
+  "why_bg_image": "why_bg_image",
 
+  "benefit_type": "benefit_type",
+  "benefit_title": "benefit_title",
+  "benefit_description": "benefit_description",
+  "benefit_cta": "benefit_cta",
+  "benefit_cta_link": "benefit_cta_link",
+  "benefit_image": "benefit_image",
+  "benefit_bg_image": "benefit_bg_image",
 
-
-  "personas": [
+  "benefit": [
     {
-      "imagen": "/assets/static/images/person1.webp",
-      "nombre": "Persona 1",
-      "posicion": "Posición 1",
-      "descripcion": "Descripción 1"
+      "benefit_question": "benefit_question",
+      "benefit_answer": "benefit_answer"
     },
     {
-      "imagen": "/assets/static/images/person2.webp",
-      "nombre": "Persona 2",
-      "posicion": "Posición 2",
-      "descripcion": "Descripción 2"
+      "benefit_question": "benefit_question",
+      "benefit_answer": "benefit_answer"
+    }
+  ],
+
+
+  "contact_type": "contact_type",
+  "contact_title": "contact_title",
+  "contact_description": "contact_description",
+  "contact_cta": "contact_cta",
+  "contact_cta_link": "contact_cta_link",
+  "contact_image": "contact_image",
+  "contact_bg_image": "contact_bg_image",
+
+  "faq_title": "faq_title",
+  "faq_description": "faq_description",
+  "faq": [
+    {
+      "faq_question": "faq_question",
+      "faq_answer": "faq_answer"
     },
     {
-      "imagen": "/assets/static/images/person3.webp",
-      "nombre": "Persona 3",
-      "posicion": "Posición 3",
-      "descripcion": "Descripción 3"
+      "faq_question": "faq_question",
+      "faq_answer": "faq_answer"
     }
   ]
-
-
-
 }
