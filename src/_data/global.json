@@ -60,7 +60,6 @@
   "banner_text": "¡Intenta tener tu móvil cerca de ti porque te llamaremos!",
   "banner_claim": "Garantía de 7 días Con un correo electrónico o solicitud, recibes el 100% de tu inversión de vuelta. ",
   "banner_button": "enviar",
-
   "introCta_type": "introCta_type",
   "introCta_title": "introCta_title",
   "introCta_description": "introCta_description",
@@ -68,7 +67,6 @@
   "introCta_cta_link": "introCta_cta_link",
   "introCta_image": "introCta_image",
   "introCta_bg_image": "introCta_bg_image",
-
   "why_type": "why_type",
   "why_title": "why_title",
   "why_description": "why_description",
@@ -76,7 +74,6 @@
   "why_cta_link": "why_cta_link",
   "why_image": "why_image",
   "why_bg_image": "why_bg_image",
-
   "benefit_type": "benefit_type",
   "benefit_title": "benefit_title",
   "benefit_description": "benefit_description",
@@ -84,7 +81,6 @@
   "benefit_cta_link": "benefit_cta_link",
   "benefit_image": "benefit_image",
   "benefit_bg_image": "benefit_bg_image",
-
   "benefit": [
     {
       "benefit_question": "benefit_question",
@@ -95,8 +91,6 @@
       "benefit_answer": "benefit_answer"
     }
   ],
-
-
   "contact_type": "contact_type",
   "contact_title": "contact_title",
   "contact_description": "contact_description",
@@ -104,7 +98,6 @@
   "contact_cta_link": "contact_cta_link",
   "contact_image": "contact_image",
   "contact_bg_image": "contact_bg_image",
-
   "faq_title": "faq_title",
   "faq_description": "faq_description",
   "faq": [
@@ -116,5 +109,8 @@
       "faq_question": "faq_question",
       "faq_answer": "faq_answer"
     }
+  ],
+  "files": [
+    "oooo"
   ]
 }

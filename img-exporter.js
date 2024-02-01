@@ -47,7 +47,7 @@ async function captureMultipleScreenshots(urls) {
   console.log('Proceso de captura de screenshots completado.');
 }
 
-const urls = data.sistemas.map((item) => {
+const urls = data.files.map((item) => {
   return {
     url: item.imageUrl,
     name: item.imageSistema,

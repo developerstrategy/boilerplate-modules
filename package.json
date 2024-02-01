@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-modules",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,19 @@
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:*",
     "debug": "DEBUG=* npx eleventy",
-    "img-exporter": "node ./img-exporter.js"
+    "img-exporter": "node ./img-exporter.js",
+
+
+    "component": "npm run generate-component",
+    "generate-component": "node src/assets/js/newComponent.js",
+    "tokencomponent": "npm run generate-token-component",
+    "generate-token-component": "node src/assets/js/newTokenComponent.js",
+    "template": "npm run generate-template",
+    "generate-template": "node src/assets/js/newTemplate.js",
+    "tokentemplate": "npm run generate-token-template",
+    "generate-token-template": "node src/assets/js/newTokenTemplate.js"
+
+
   },
   "repository": {
     "type": "git",
@@ -35,6 +47,8 @@
   "dependencies": {
     "aos": "^2.3.4",
     "eleventy-plugin-embed-everything": "^1.16.0",
+    "fs": "^0.0.1-security",
+
     "holygrailcss": "^2.2.50",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.6",

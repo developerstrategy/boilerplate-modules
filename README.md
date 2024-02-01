@@ -41,6 +41,8 @@ Agradecemos a todos quienes han contribuido con su tiempo, código y feedback.
 Inspiración, créditos, etc.
 
 
+`npm run template nombreDeLaPaginaTemplate`
+`npm run tokentemplate nombreDelToken`
 
 
 

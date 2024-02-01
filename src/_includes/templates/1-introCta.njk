@@ -2,65 +2,89 @@
   <div class="video-bg">
     {% if global.home_image %}
     {% if global.home_image.endsWith('.mp4') %}
-      <video poster="" autoplay="" muted="" loop="">
-        <source src="{{ global.home_image }}" type="video/mp4" />
-      </video>
+    <video poster="" autoplay="" muted="" loop="">
+      <source src="{{ global.home_image }}" type="video/mp4" />
+    </video>
     {% else %}
-      <img src="{{ global.home_image }}" alt="">
+    <img src="{{ global.home_image }}" alt="">
     {% endif %}
-  {% endif %}
-
-
-
-
+    {% endif %}
   </div>
   <div class=" container-2 mx-auto ">
     <div class="row section-x height-full  align-middle text-center  ">
       <div class="col-xs-12 mb-24">
         <div class="vertical-wrap ">
           <div class="vertical-inner">
-            <h1 class="fluid-3-b ">{{ global.introCta_title | wrapWithDiv | safe }}
+            <h1 class="fluid-3-b ">
+              {% call insert.splitenpalabras(global.introCta_title ) %} {% endcall %}
             </h1>
           </div>
         </div>
       </div>
       <div class="col-xs-12  front-text ">
         <div class="vertical-wrap-2 pb-24 text-center">
-            <div class="vertical-inner">
-              <h2 class="fluid-8-r mb-8">
-                {% call insert.splitenpalabras( subtitle ) %} {% endcall %}
+          <div class="vertical-inner">
+            <h2 class="fluid-8-r mb-8">
+              {% call insert.splitenpalabras( subtitle ) %} {% endcall %}
+          </div>
+        </div>
+
+
+        <button type="button"
+          class="btn--icon btn mb-32"><span
+            class="btn--icon-text c-primary fluid-9-b">EMPIEZA A GANAR  </span>
+
+
+
+          <div aria-hidden="true" class="btn__circle ">
+            <div class="">
+              <div class="btn--icon-text c-white fluid-9-b">EMPIEZA A GANAR</div>
+
+
+
+              <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-15 w-15 overflow-hidden">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+                  class="btn__path fill-current"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+                  class="btn__path fill-current"></path>
+              </svg>
             </div>
           </div>
-          <div class=" ">
- 
-              <a href="#repositorio "> <button class="btn btn-primary btn--big mx-24 mb-20 "> EMPIEZA A GANAR  </button></a>     
-                
-                <a href="#repositorio "><button class="link-line mx-24 mb-20"> TOUR RÁPIDO</button></a>
-     
-          </div>
-          {% if btn_whtasapp == 'on' %}
-          <div class="main-full">
-            <a aria-label="link whatsapp" href="https://wa.me/{{ global.whatsapp }}">
-              <button class="btn btn-social btn-wechat btn--small text-14-b">
-                <svg id="bubble-whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
-                  <path d="M519 454c4 2 7 10-1 31-6 16-33 29-49 29-96 0-189-113-189-167 0-26 9-39 18-48 8-9 14-10 18-10h12c4 0 9 0 13 10l19
+        </button>
+
+
+        <div class="content-middle mb-16">
+          <div class="fluid-9-b">Excelente</div><img width="100px" class=""
+            src="https://storage.googleapis.com/landing-strapi-v4/assets/svg/stars-giFRggf5fPfNiJXB7To2fd.svg"
+            loading="lazy" alt="estrellas de Truspilot" height="100%" width="100%"
+            srcset="https://storage.googleapis.com/landing-strapi-v4/assets/svg/stars-giFRggf5fPfNiJXB7To2fd.svg">
+        </div>
+        <div>Valoración: <span class="text-bold"> 4,4 </span>/ de <span class="text-bold">1.200 </span>reseñas en
+          Trustpilot</div>
+        {% if btn_whtasapp == 'on' %}
+        <div class="main-full">
+          <a aria-label="link whatsapp" href="https://wa.me/{{ global.whatsapp }}">
+            <button class="btn btn-social btn-wechat btn--small text-14-b">
+              <svg id="bubble-whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                <path d="M519 454c4 2 7 10-1 31-6 16-33 29-49 29-96 0-189-113-189-167 0-26 9-39 18-48 8-9 14-10 18-10h12c4 0 9 0 13 10l19
       44c5 11-9 25-15 31-3 3-6 7-2 13 25 39 41 51 81 71 6 3 10 1 13-2l19-24c5-6 9-4 13-2zM401 200c-110 0-199 90-199 199
       0 68 35 113 35 113l-20 74 76-20s42 32 108 32c110 0 199-89 199-199 0-111-89-199-199-199zm0-40c133 0 239 108 239 239
       0 132-108 239-239 239-67 0-114-29-114-29l-127 33 34-124s-32-49-32-119c0-131 108-239 239-239z"></path>
-                </svg>
-                Solicita una visita via whatsapp
-              </button>
-            </a>
+              </svg>
+              Solicita una visita via whatsapp
+            </button>
+          </a>
+        </div>
+        {% endif %}
+        <div class="vertical-wrap">
+          <div class="vertical-inner">
+            <span class="text-14-r">
+              {{ fecha }}
+            </span>
           </div>
-          {% endif %}
-          <div class="vertical-wrap">
-            <div class="vertical-inner">
-              <span class="text-14-r">
-                {{ fecha }}
-              </span>
-            </div>
-          </div>
-   
+        </div>
       </div>
       {% if not noheroimage %}
       <div class="col-xs-12 col-sm-6 ">
