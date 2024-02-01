@@ -2,109 +2,23 @@
 layout: base.njk
 ---
 {% set noheroimage = [] %}
-{% import "macros/_insert.njk" as insert %}
+{% import "_macros/_insert.njk" as insert %}
 <article class="main-article">
   {% include 'templates/1-introCta.njk' %}
 
 
 
 
-  <ul role="list" class="list-clear blog-intro-inner">
-    {% for blog in collections.blog | reverse %}
-    {% include 'blog-loop.njk' %}
-    {% endfor %}
-  </ul>
+  <div class="container-global mx-auto  pb-64  ">
+    <ul role="list" class="list-clear flow">
+      {% for file in sistemas.files %}
+      {% include 'global-loop.njk' %}
+      {% endfor %}
+    </ul>
+  </div>
 
 
-  <section class="inview pt-64 ">
-    <div class="row align-middle text-center">
-      <div class="col-xs-12 mb-24">
-        <span class="fluid-5-b accent">Ellos son la voz de nuestro trabajo
-        </span>
-      </div>
-      <div class="col-xs-12">
-        <span class="fluid-8-r"> Lo que opinan nuestros clientes: </span>
-      </div>
-    </div>
-    <div class="marquee">
-      <div class="marquee--inner">
-        <span class="marquee--span">
-          <div class="marquee--inner-div">
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Excelente servicio, muy profesionales recomendable 100%'
-              ,'Sonia Romera','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %}
-            </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Trabajo con ellos hace casi 4 años, te ayudan en todo
-              momento, las formaciones que ofrecen son muy buenas e interesantes. Grandes profesionales, trato
-              excepcional, recomiendo 100%.'
-              ,'sara marrahi','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %} </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Estamos encantados de trabajar con un equipo tan competente
-              desde un punto de vista profesional; y tan amable y acogedor personalmente. Todos sus servicios son
-              recomendables 100%'
-              ,'Dentinova Ortodoncia &
-              Kids','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %} </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Personal muy profesional, trato cercano y amable. Llevamos un
-              par de años colaborando con ellos y estamos contentos. Es muy cómodo trabajar con HSG. Especial mención a
-              Marisol hace que el trabajo sea sencillo, muy resolutiva ante cualquier incidencia. HSG Service lo
-              recomiendo 100%'
-              ,'MINIM. Tu Ortodoncia
-              Invisible','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %}
-            </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Hice con ellos la formación de primeras visitas y las
-              técnicas que me han dado las comencé a usar desde el primer día, los resultados han sido muy buenos, puedo
-              notar a los pacientes más contentos y ya trabajamos de una manera mas organizada'
-              ,'Alesanko Martinez','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %} </div>
-          </div>
-        </span>
-        <span class="marquee--span">
-          <div class="marquee--inner-div">
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Excelente servicio, muy profesionales recomendable 100%'
-              ,'Sonia Romera','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %}
-            </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Trabajo con ellos hace casi 4 años, te ayudan en todo
-              momento, las formaciones que ofrecen son muy buenas e interesantes. Grandes profesionales, trato
-              excepcional, recomiendo 100%.'
-              ,'sara marrahi','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %} </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Estamos encantados de trabajar con un equipo tan competente
-              desde un punto de vista profesional; y tan amable y acogedor personalmente. Todos sus servicios son
-              recomendables 100%'
-              ,'Dentinova Ortodoncia &
-              Kids','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %} </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Personal muy profesional, trato cercano y amable. Llevamos un
-              par de años colaborando con ellos y estamos contentos. Es muy cómodo trabajar con HSG. Especial mención a
-              Marisol hace que el trabajo sea sencillo, muy resolutiva ante cualquier incidencia. HSG Service lo
-              recomiendo 100%'
-              ,'MINIM. Tu Ortodoncia
-              Invisible','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %}
-            </div>
-            <div class="marquee--inner-div-inner">
-              {% call insert.comentario('marketing-spot' ,'Hice con ellos la formación de primeras visitas y las
-              técnicas que me han dado las comencé a usar desde el primer día, los resultados han sido muy buenos, puedo
-              notar a los pacientes más contentos y ya trabajamos de una manera mas organizada'
-              ,'Alesanko Martinez','AATXAJw-aN4Ob64Nnu1Ojq0RpH-fyhxN4ssayUwpUfwj=s120-c-c-rp-w64-h64-mo-br100') %}
-              {% endcall %} </div>
-          </div>
-        </span>
-      </div>
-    </div>
-  </section>
+
   <section>
     <div class="row">
       <div class="col-xs-12">ojjojoi</div>

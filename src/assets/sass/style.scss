@@ -552,7 +552,7 @@ ul.list-clear li {
   li {
     flex-basis: calc(33% - 16px);
     @media (min-width: $break-lg) {
-      flex-basis: calc(33% - 16px);
+      flex-basis: calc(20% - 16px);
     }
   }
 }

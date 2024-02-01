@@ -1,0 +1,14 @@
+{% macro token(tokenType = '', explicacion = '', dark = '') %}
+  <h3>{{ tokenType }}</h3>
+  <p class="title-xs">{{ explicacion }}</p>
+  <div class="resize-mini">
+    <div class="resize-mini-content-narrow {{dark  }} ">
+      {% include '_tokens/_components/' + tokenType + '.njk' %}
+    </div>
+  </div>
+  {% set standardcode %}
+  {% include '_tokens/_components/' + tokenType + '.njk' %}
+  {% endset %}
+  <pre><code class=" ">{{standardcode }} </code></pre>
+{% endmacro %}
+

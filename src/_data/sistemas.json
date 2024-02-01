@@ -10,16 +10,16 @@
   ],
   "files": [
     {
-      "imageUrl": "https://garden.zendesk.com/9999",
-      "imageSistema": "/assets/static/9999.jpg",
-      "empresaSistema": "9999",
-      "descripcionSistema": "9999 description."
+      "imageUrl": "https://boilerplate-modules.netlify.app/token-aaaa/",
+      "imageSistema": "/assets/static/aaaa.jpg",
+      "empresaSistema": "aaaa",
+      "descripcionSistema": "aaaa description."
     },
     {
-      "imageUrl": "https://garden.zendesk.com/otro",
-      "imageSistema": "/assets/static/otro.jpg",
-      "empresaSistema": "otro",
-      "descripcionSistema": "otro description."
+      "imageUrl": "https://boilerplate-modules.netlify.app/token-bbb/",
+      "imageSistema": "/assets/static/bbb.jpg",
+      "empresaSistema": "bbb",
+      "descripcionSistema": "bbb description."
     }
   ]
 }

@@ -1,24 +1,24 @@
 <li>
 {# <p>ID de la iteración: {{ loop.index }}</p>   #}
 
-  <a href="{{ sistema.imageUrl }}" target="_blank" rel="nofollow noreferrer">
+  <a href="{{ file.imageUrl }}" target="_self" rel="nofollow noreferrer">
     <article id="{{ proyecto.id }}" class=" product mbr-64">
 
 
       <div class=" sm:text-center">
         <div>
           <div class=" p-24">
-            <div class=" mb-8">{{ sistema.nombreSistema }}</div>
+            <div class=" mb-8">{{ file.nombreSistema }}</div>
 
             <div class="mb-24">
               <div data-aos-once="true" data-aos-delay="100" class="text-12-r ttu  c-secondary">
-               By  {{ sistema.empresaSistema }}
+               By  {{ file.empresaSistema }}
               </div>
 
             </div>
             <div class="">
               <p data-aos-once="true" class="text-18-r product-sistema ">
-                {{ sistema.descripcionSistema }}
+                {{ file.descripcionSistema }}
               </p>
             </div>
           </div>
@@ -28,8 +28,8 @@
             <div class="rat-content">
               <img width="100%"  height="auto"
                 class=""
-                alt="{{ sistema.imageSistema | replace('.webp', '') }} | design system"
-                src="/assets/static/capturas/{{ sistema.imageSistema }} "
+                alt="{{ file.imageSistema | replace('.webp', '') }} | design system"
+                src="/assets/static/capturas/{{ file.imageSistema }} "
               />
 
 

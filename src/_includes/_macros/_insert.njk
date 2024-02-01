@@ -284,3 +284,89 @@
 </div>
 {% endmacro %}
 
+
+
+
+{% macro template(ruta = '', component = '', size = '', componentfigma = "", descripcion = '') %}
+<section class="mb-32 mt-32 ">
+  <div class="resize-container">
+    <div class="resize-bar title-xs">
+      <div class="resize-name">
+        <div class="title-l">{{ component | capitalize }}</div>
+      </div>
+      <div class="resize-snip title-m">
+        <a target="_blank" href=" {{ componentfigma }}">
+          FIGMA
+        </a>
+      </div>
+      <div class="resize-snip title-m">
+        <a class="" target="_blank" href="/{{ component }}">
+          VER
+        </a>
+      </div>
+      <div class="resize-code">
+        <div class="title-m">
+          CODE </div>
+      </div>
+    </div>
+    <div class="viewcode">
+      <pre><code class="language-markup">{% set standardcode %} 
+                {% include   ruta+component +'.njk' %}
+				{% endset %}{{standardcode}}</code></pre>
+    </div>
+    <div class="main-content">
+      <div class="col-xs-12">{{descripcion}}</div>
+    </div>
+    <div class="resize">
+      <div class="r1"></div>
+      <div class="r2"></div>
+      <div class="r3"></div>
+      <div class="resize-content">
+        <div class="resize-media"></div>
+        <div class="resize-resolution"></div>
+      </div>
+      <div class="resize-left"></div>
+      <div class="resize-right"></div>
+      <iframe id="cover1" class="resizable" src="/{{ component }}/" width="100%" height="{{ size }}" frameborder="0"
+        seamless></iframe>
+    </div>
+  </div>
+  </div>
+</section>
+{% endmacro %}
+{% macro select(selectName = '', explicacion = '', dark = '') %}
+<h3 class="my-16 title-l">{{ selectName | capitalize }}</h3>
+<p class="title-xs">{{selectName }} : {{ explicacion }}</p>
+<div class="resize-mini">
+  <div class="resize-mini-content {{dark  }} ">
+    <div class="select {{selectName }}">
+      {% if selectName == 'select-label' %}
+      <label>{{selectName }}
+      </label>
+      {% endif %}
+      <select>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="l">L</option>
+        <option value="XL">XL</option>
+      </select>
+    </div>
+  </div>
+  {% set standardcode %}
+  <div class="select {{selectName }}">
+    {% if selectName == 'select-label' %}
+    <label>{{ selectName }}</label>
+    {% endif
+    %}
+    <select>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="l">L</option>
+      <option value="XL">XL</option>
+    </select>
+  </div>
+  {% endset %}
+  <pre><code class="language-markup">{{standardcode}} </code></pre>
+</div>
+{% endmacro %}
+

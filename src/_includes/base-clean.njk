@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <meta name="google-site-verification" content="{{ global.search_console }}" />
+  <title>{{ title }}</title>
+  <meta name="robots" content="{{ metaRobots }}" />
+    <link rel="icon" href="/assets/static/images/favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="{{ metaDescription or eleventyComputed.metaDescription or metadata.description }}" />
+  <meta name="keywords" content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
+  <style>
+    :root {
+  --c-primary: {{global.c_primary}};
+  --c-secondary: {{global.c_secondary}};
+  --bg-dark: {{global.bg_dark}};
+  --c-bg-dark: {{global.c_bg_dark}};
+  --bg-light: {{global.bg_light}};
+  --c-bg-light: {{global.c_bg_light}};
+  --btn-radius: {{global.btn_radius}};
+  --padding-global: {{global.padding_global}};
+  --btn-radius: {{global.btn_radius}};
+  }
+</style>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="canonical" href="{{ global.url }}/{{ page.url | url }}" />
+  <meta property="og:site_name" content="{{ global.empresa }}" />
+  <meta property="og:image" content="{{ global.url }}/assets/static/images/1.jpg" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ global.url }}" />
+  <meta property="og:description"
+    content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
+</head>
+<body class="contain guide ">
+  <main>
+    {{ content | safe }}
+<div class="guide-inspect">   
+<button class="resize-rules  btn btn-secondary  ">  
+	<div class="">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+			<title>measure-02</title>
+			<g stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" transform="translate(0.5 0.5)" fill="#eaeaea"
+				stroke="#eaeaea">
+				<line fill="none" stroke-miterlimit="10" x1="8" y1="6" x2="11" y2="6"></line>
+				<line fill="none" stroke-miterlimit="10" x1="8" y1="10" x2="10" y2="10"></line>
+				<line fill="none" stroke-miterlimit="10" x1="8" y1="14" x2="11" y2="14"></line>
+				<line fill="none" stroke-miterlimit="10" x1="8" y1="18" x2="10" y2="18"></line>
+				<rect x="8" y="1" fill="none" stroke="#eaeaea" stroke-miterlimit="10" width="8" height="22"></rect>
+			</g>
+		</svg>
+	</div>
+</button>
+<button class=" btn btn-secondary rtl-inspect" onclick="rtlChange()">RTL</button>
+</div>
+  </main>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="/assets/js/index.js"></script>
+<script type="module" src="/assets/js/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/atom-one-dark.css" />
+</body>
+</html>
