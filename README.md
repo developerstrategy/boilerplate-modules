@@ -42,7 +42,12 @@ Inspiración, créditos, etc.
 
 
 `npm run template nombreDeLaPaginaTemplate`
+
+
+Este es el que hace el elemento y lo muestra en la home
 `npm run tokentemplate nombreDelToken`
+
+`npm run img-exporter`
 
 
 

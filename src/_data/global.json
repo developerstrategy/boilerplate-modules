@@ -38,6 +38,8 @@
   "provincia": "Barcelona",
   "actividad": " the boilerplate",
   "home_image": "",
+
+
   "c_gray": "#727272",
   "c_primary": "#000000",
   "c_secondary": "#000000",
@@ -46,6 +48,7 @@
   "bg_light": "#f3f2f0",
   "c_bg_light": "#2b2a28",
   "c_bg_dark": "#f7f6f5",
+  "bg_primary": "linear-gradient(120deg, #E14EF7 0%, #8E44F6 30%, #3D40F5 100%)",
   "btn_radius": "50px",
   "padding-global": "16px",
   "seo_title": "seo_title",
@@ -60,6 +63,10 @@
   "banner_text": "¡Intenta tener tu móvil cerca de ti porque te llamaremos!",
   "banner_claim": "Garantía de 7 días Con un correo electrónico o solicitud, recibes el 100% de tu inversión de vuelta. ",
   "banner_button": "enviar",
+
+
+
+
   "introCta_type": "introCta_type",
   "introCta_title": "introCta_title",
   "introCta_description": "introCta_description",
@@ -67,6 +74,8 @@
   "introCta_cta_link": "introCta_cta_link",
   "introCta_image": "introCta_image",
   "introCta_bg_image": "introCta_bg_image",
+
+
   "why_type": "why_type",
   "why_title": "why_title",
   "why_description": "why_description",
@@ -74,6 +83,17 @@
   "why_cta_link": "why_cta_link",
   "why_image": "why_image",
   "why_bg_image": "why_bg_image",
+
+
+  "content_type": "content_type",
+  "content_title": "content_title",
+  "content_description": "content_description",
+  "content_cta": "content_cta",
+  "content_cta_link": "content_cta_link",
+  "content_image": "content_image",
+  "content_bg_image": "content_bg_image",
+
+
   "benefit_type": "benefit_type",
   "benefit_title": "benefit_title",
   "benefit_description": "benefit_description",

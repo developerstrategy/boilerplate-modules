@@ -1,4 +1,4 @@
-AOS.init();
+
 
 console.log("Hola, mundo!");
 

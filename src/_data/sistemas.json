@@ -1,25 +1,112 @@
 {
-  "sistemas": [
-    {
-      "imageUrl": "https: //design.axa.com/",
-      "imageSistema": "/assets/static/axa.4250cd3.bfd3beb8a5fc2c25cdba4b5a8304a63b.jpg",
-      "empresaSistema": " AXA",
-      "nombreSistema": "AXA Digital Guidelines",
-      "descripcionSistema": " We help product teams at AXA build meaningful interactions and share best practices. Principles, tools, templates, components, advice _ the one stop shop to create state of the art digital assets. "
-    }
-  ],
   "files": [
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/token-aaaa/",
-      "imageSistema": "/assets/static/aaaa.jpg",
-      "empresaSistema": "aaaa",
-      "descripcionSistema": "aaaa description."
+      "imageUrl": "http://localhost:8080/hero_1",
+      "imageSistema": "hero_1.jpg",
+      "empresaSistema": "hero_1",
+      "descripcionSistema": "hero_1 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/token-bbb/",
-      "imageSistema": "/assets/static/bbb.jpg",
-      "empresaSistema": "bbb",
-      "descripcionSistema": "bbb description."
+      "imageUrl": "http://localhost:8080/hero_2",
+      "imageSistema": "hero_2.jpg",
+      "empresaSistema": "hero_2",
+      "descripcionSistema": "hero_2 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/hero_3",
+      "imageSistema": "hero_3.jpg",
+      "empresaSistema": "hero_3",
+      "descripcionSistema": "hero_3 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_1",
+      "imageSistema": "content_1.jpg",
+      "empresaSistema": "content_1",
+      "descripcionSistema": "content_1 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_2",
+      "imageSistema": "content_2.jpg",
+      "empresaSistema": "content_2",
+      "descripcionSistema": "content_2 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_3",
+      "imageSistema": "content_3.jpg",
+      "empresaSistema": "content_3",
+      "descripcionSistema": "content_3 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_4",
+      "imageSistema": "content_4.jpg",
+      "empresaSistema": "content_4",
+      "descripcionSistema": "content_4 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_5",
+      "imageSistema": "content_5.jpg",
+      "empresaSistema": "content_5",
+      "descripcionSistema": "content_5 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_6",
+      "imageSistema": "content_6.jpg",
+      "empresaSistema": "content_6",
+      "descripcionSistema": "content_6 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_7",
+      "imageSistema": "content_7.jpg",
+      "empresaSistema": "content_7",
+      "descripcionSistema": "content_7 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_8",
+      "imageSistema": "content_8.jpg",
+      "empresaSistema": "content_8",
+      "descripcionSistema": "content_8 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_9",
+      "imageSistema": "content_9.jpg",
+      "empresaSistema": "content_9",
+      "descripcionSistema": "content_9 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/content_10",
+      "imageSistema": "content_10.jpg",
+      "empresaSistema": "content_10",
+      "descripcionSistema": "content_10 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/faqs_1",
+      "imageSistema": "faqs_1.jpg",
+      "empresaSistema": "faqs_1",
+      "descripcionSistema": "faqs_1 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/pricing_1",
+      "imageSistema": "pricing_1.jpg",
+      "empresaSistema": "pricing_1",
+      "descripcionSistema": "pricing_1 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/contact_1",
+      "imageSistema": "contact_1.jpg",
+      "empresaSistema": "contact_1",
+      "descripcionSistema": "contact_1 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/contact_2",
+      "imageSistema": "contact_2.jpg",
+      "empresaSistema": "contact_2",
+      "descripcionSistema": "contact_2 description."
+    },
+    {
+      "imageUrl": "http://localhost:8080/contact_3",
+      "imageSistema": "contact_3.jpg",
+      "empresaSistema": "contact_3",
+      "descripcionSistema": "contact_3 description."
     }
   ]
 }

@@ -1,0 +1,21 @@
+---
+layout: base-clean.njk
+---
+<!-- Contenido de la plantilla content_5.njk -->
+{% import "_macros/_insert.njk" as insert %}
+
+<div class="container mb-64 inview">
+    <div class="box-image bg-light  p-32">
+      <div class="row sm:reverse">
+        <div class="col-xs-12 col-sm-6 text-left"><img class="w-100" src="/assets/static/images/robot.webp" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="fluid-7-b mb-32">
+            {% call insert.splitenpalabras('¿Todavía no has visto nuestro entrenamiento para conseguir 1 cliente al día
+            usando nuestro **blog **y **la **Inteligencia **Artificial?') %} {% endcall %}
+          </h3>
+          <div class="btn btn-primary">Ver entrenamiento</div>
+        </div>
+      </div>
+    </div>
+  </div>

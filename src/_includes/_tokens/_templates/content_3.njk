@@ -1,0 +1,19 @@
+---
+layout: base-clean.njk
+---
+<!-- Contenido de la plantilla hero_1.njk -->
+{% import "_macros/_insert.njk" as insert %}
+
+<section class="bg-color inview ">
+  <div class="container  pb-64">
+    <div class="row sm:reverse   ">
+      <div class="col-xs-12 front-text mb-40  border-20">
+        <img class="border-20" width="100%" src="/assets/static/images/person3.jpg" alt="">
+      </div>
+      <div class="col-xs-12  front-text  align-middle">
+        <div class="fluid-6-b mb-24  ">
+          {% call insert.splitenpalabras(  global.content_description  ) %} {% endcall %}
+        </div>
+      </div>
+    </div>
+</section>

@@ -42,6 +42,7 @@ $width-left: calc((1280px + (100vw - 1600px) / 2));
 @import "./componentes/_list.scss";
 @import "./componentes/_accordion.scss";
 @import "./componentes/_blog-home.scss";
+@import "./componentes/_buttons.scss";
 
 $primary-color: var(--primary-color);
 $c-primary: var(--c-primary);
@@ -49,6 +50,8 @@ $c-gray: var(--c-gray);
 $c-secondary: var(--c-secondary);
 $bg-dark: var(--bg-dark);
 $c-bg-dark: var(--c-bg-dark);
+
+$bg-primary: var(--bg-primary);
 
 svg {
   fill: $c-primary;
@@ -583,8 +586,7 @@ a:has(.product) {
   transition: all ease 0.2s;
   .product-img {
     opacity: 1;
-    border-top: 1px solid #f3f2f0;
-    background-color: #1e2025;
+
     img {
       opacity: 1;
       -webkit-transform: translateZ(0);
@@ -614,7 +616,7 @@ a:has(.product) {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 85px;
+    height: 16px;
   }
   .product-name {
     position: absolute;

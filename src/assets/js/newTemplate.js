@@ -123,8 +123,8 @@ fs.readFile(globalJsonPath, (err, data) => {
 
   // Crear el objeto con la nueva estructura para el fileName
   const newFileObject = {
-    imageUrl: `http://localhost:8080/token-${fileName}`,
-    imageSistema: `/assets/static/${fileName}.jpg`,
+    imageUrl: `http://localhost:8080/${fileName}`,
+    imageSistema: `${fileName}.jpg`,
     empresaSistema: fileName,
     descripcionSistema: `${fileName} description.`
   };

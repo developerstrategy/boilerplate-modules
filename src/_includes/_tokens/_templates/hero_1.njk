@@ -1,0 +1,62 @@
+---
+layout: base-clean.njk
+---
+<!-- Contenido de la plantilla hero_1.njk -->
+{% import "_macros/_insert.njk" as insert %}
+
+
+<section class=" herohome inview  o-hidden  bg-dark has-light bg-geometric ">
+    <div class=" container-2 mx-auto ">
+        <div class="row section-x height-full  align-middle text-center  ">
+            <div class="col-xs-12 mb-24">
+                <div class="vertical-wrap ">
+                    <div class="vertical-inner">
+                        <h1 class="fluid-3-b ">
+                            {% call insert.splitenpalabras(global.introCta_title ) %} {% endcall %}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12  front-text ">
+                <div class="vertical-wrap-2 pb-24 text-center">
+                    <div class="vertical-inner">
+                        <h2 class="fluid-8-r mb-8">
+                            {% call insert.splitenpalabras( global.introCta_description ) %} {% endcall %}
+                    </div>
+                </div>
+                <button type="button" class="btn--icon btn mb-32"><span
+                        class="btn--icon-text c-primary fluid-9-b">{{global.introCta_cta}} </span>
+                    <div aria-hidden="true" class="btn__circle ">
+                        <div class="">
+                            <div class="btn--icon-text c-white fluid-9-b">{{global.introCta_cta}}   </div>
+                            <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="h-15 w-15 overflow-hidden">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+                                    class="btn__path fill-current"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.82475e-07 5.625L7.625 5.625L4.125 9.125L5 10L10 5L5 -4.37114e-07L4.125 0.874999L7.625 4.375L4.91753e-07 4.375L3.82475e-07 5.625Z"
+                                    class="btn__path fill-current"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </button>
+                <div class="content-middle mb-16">
+                    <div class="fluid-9-b">Excelente</div>
+                    <img width="100px" class=""
+                        src="https://storage.googleapis.com/landing-strapi-v4/assets/svg/stars-giFRggf5fPfNiJXB7To2fd.svg"
+                        loading="lazy" alt="estrellas de Truspilot" height="100%" width="100%"
+                        srcset="https://storage.googleapis.com/landing-strapi-v4/assets/svg/stars-giFRggf5fPfNiJXB7To2fd.svg">
+                </div>
+                <div>Valoración: <span class="text-bold"> 4,4 </span>/ de <span class="text-bold">1.200 </span>reseñas en Trustpilot</div>
+                <div class="vertical-wrap">
+                    <div class="vertical-inner">
+                        <span class="text-14-r">
+                            {{ fecha }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

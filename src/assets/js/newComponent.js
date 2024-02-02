@@ -52,6 +52,8 @@ layout: base-clean.njk
 ---
 
 <!-- Contenido de la plantilla ${fileName}.njk -->
+{% import "_macros/_insert.njk" as insert %}
+
 `;
 
 // Renderizar la plantilla con los datos y guardar el archivo Markdown

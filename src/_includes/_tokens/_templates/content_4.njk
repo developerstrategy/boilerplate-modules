@@ -1,0 +1,34 @@
+---
+layout: base-clean.njk
+---
+<!-- Contenido de la plantilla content_4.njk -->
+{% import "_macros/_insert.njk" as insert %}
+
+<div class="container-5 text-center ptr-120 pbr-120 inview">
+    <div class="row mb-64">
+      <div class="col-xs-12">
+        <div class="fluid-5-b mb-24">
+          {% call insert.splitenpalabras('Algunos ejemplos de **nuestras **páginas') %} {% endcall %}
+        </div>
+        <div class="fluid-9-r mb-24">
+          Realizadas con el constructor de Generator Landing
+        </div>
+      </div>
+    </div>
+    <div class="row mb-64">
+      <div class="col-xs-4">
+        <div class="mb-24">
+          <img class="w-100" src="/assets/static/images/12.webp" alt="">
+        </div>
+        <div class="h3 mb-16">Productos Físicos</div>
+      </div>
+      <div class="col-xs-4">
+        <div class="mb-24"> <img class="w-100" src="/assets/static/images/11.webp" alt=""></div>
+        <div class="h3 mb-16">Productos Digitales</div>
+      </div>
+      <div class="col-xs-4">
+        <div class="mb-24"> <img class="w-100" src="/assets/static/images/10.webp" alt=""></div>
+        <div class="h3 mb-16">Oficios Físicos</div>
+      </div>
+    </div>
+  </div>
