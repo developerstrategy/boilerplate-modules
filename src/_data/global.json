@@ -41,9 +41,10 @@
 
 
   "c_gray": "#727272",
-  "c_primary": "#000000",
+  "c_primary": "#1d1e23",
   "c_secondary": "#000000",
-  "c_accent": "#ff0000",
+  "c_accent": "#5041f5",
+
   "bg_dark": "#1D1E23",
   "bg_light": "#f3f2f0",
   "c_bg_light": "#2b2a28",
@@ -68,7 +69,7 @@
 
 
   "introCta_type": "introCta_type",
-  "introCta_title": "introCta_title",
+  "introCta_title": "Bloques de diseño **Boilerplate  ",
   "introCta_description": "introCta_description",
   "introCta_cta": "introCta_cta",
   "introCta_cta_link": "introCta_cta_link",

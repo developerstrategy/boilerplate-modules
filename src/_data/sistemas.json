@@ -18,6 +18,15 @@
       "empresaSistema": "hero_3",
       "descripcionSistema": "hero_3 description."
     },
+
+    
+    {
+      "imageUrl": "http://localhost:8080/hero_4",
+      "imageSistema": "hero_4.jpg",
+      "empresaSistema": "hero_4",
+      "descripcionSistema": "hero_4 description."
+    },
+
     {
       "imageUrl": "http://localhost:8080/content_1",
       "imageSistema": "content_1.jpg",

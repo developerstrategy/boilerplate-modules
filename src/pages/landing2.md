@@ -3,7 +3,7 @@ layout: landing2.njk
 permalink: /landing2.html
 
 
-title:  La mejor web --landing optimizada-- en seo del mundo
+title:  La mejor web **landing **optimizada en seo del mundo
 tags: ["nav"]
 whytitle1:  ¿--Eres diseñador--, diseñador web o estás emprendiendo en línea?
 whytitle2:  ¿Alguna vez te has preguntado por qué algunos sitios generan leads y ventas como un reloj y otros solo cuestan $$$?

@@ -14,7 +14,7 @@ async function captureMultipleScreenshots(urls) {
 
   // for (let i = 10; i < urls.length; i++) {
 
- for (let i = 10; i < urls.length; i++) {
+ for (let i = 0; i < urls.length; i++) {
 
     const url = urls[i];
     try {

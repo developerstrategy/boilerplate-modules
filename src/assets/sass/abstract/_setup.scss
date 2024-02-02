@@ -8,16 +8,25 @@ $breakpoints: (
 $container: 992px;
 $btn-radius: var(--btn-radius);
 $padding-global: 16px; //no permite operaciones matematicas
-$c-white: #ffffff;
-$c-black: #2b2a28;
-$c-primary: #2b2a28;
-$c-dark-grey: #8e8e8e;
-$c-middle-grey: #e3e3e3;
-$c-light-grey: #f0f0f0;
-$c-error: #b40016;
-$c-info: #1a32a4;
+
 $height-md: 200px;
 $height-xl: 450px ;
+
+$primary-color: var(--primary-color);
+$c-primary: var(--c-primary);
+$c-accent: var(--c-accent);
+
+
+$c-gray: var(--c-gray);
+$c-secondary: var(--c-secondary);
+$bg-dark: var(--bg-dark);
+$c-bg-dark: var(--c-bg-dark);
+
+$bg-primary: var(--bg-primary);
+
+
+
+
 $minheaders:/* name:mobile,768,992,1280,line-height,font */ 
   ( h1: ( 32px, 40px, 1.2, "medium", ), 
   h2: ( 24px, 32px, 1.2, "light", ), 

@@ -4,8 +4,8 @@ permalink: /
 
 
 
-title:  La mejor web landing  optimizada en seo del mundo
-subtitle:  Plataforma de páginas landing sin código para especialistas en marketing digital basada en performance te permite diseñar, publicar y optimizar activos de marketing digital con seguimiento de microconversiones para obtener mejores tasas de conversión. 
+title:  Bloques de diseño Boilerplate
+subtitle:  Más de 170 bloques de diseño responsivos listos para usarse en sus aplicaciones web o móviles. Todos los bloques se basan en la biblioteca Holygrail y son los componentes básicos de hermosos sitios web. 
 image: 7.webpx
 tags: ["nav"]
 
