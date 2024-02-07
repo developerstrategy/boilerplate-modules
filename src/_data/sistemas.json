@@ -1,19 +1,19 @@
 {
   "files": [
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/hero_1",
+      "imageUrl": "/hero_1",
       "imageSistema": "hero_1.jpg",
       "empresaSistema": "hero_1",
       "descripcionSistema": "hero_1 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/hero_2",
+      "imageUrl": "/hero_2",
       "imageSistema": "hero_2.jpg",
       "empresaSistema": "hero_2",
       "descripcionSistema": "hero_2 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/hero_3",
+      "imageUrl": "/hero_3",
       "imageSistema": "hero_3.jpg",
       "empresaSistema": "hero_3",
       "descripcionSistema": "hero_3 description."
@@ -21,98 +21,98 @@
 
     
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/hero_4",
+      "imageUrl": "/hero_4",
       "imageSistema": "hero_4.jpg",
       "empresaSistema": "hero_4",
       "descripcionSistema": "hero_4 description."
     },
 
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_1",
+      "imageUrl": "/content_1",
       "imageSistema": "content_1.jpg",
       "empresaSistema": "content_1",
       "descripcionSistema": "content_1 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_2",
+      "imageUrl": "/content_2",
       "imageSistema": "content_2.jpg",
       "empresaSistema": "content_2",
       "descripcionSistema": "content_2 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_3",
+      "imageUrl": "/content_3",
       "imageSistema": "content_3.jpg",
       "empresaSistema": "content_3",
       "descripcionSistema": "content_3 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_4",
+      "imageUrl": "/content_4",
       "imageSistema": "content_4.jpg",
       "empresaSistema": "content_4",
       "descripcionSistema": "content_4 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_5",
+      "imageUrl": "/content_5",
       "imageSistema": "content_5.jpg",
       "empresaSistema": "content_5",
       "descripcionSistema": "content_5 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_6",
+      "imageUrl": "/content_6",
       "imageSistema": "content_6.jpg",
       "empresaSistema": "content_6",
       "descripcionSistema": "content_6 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_7",
+      "imageUrl": "/content_7",
       "imageSistema": "content_7.jpg",
       "empresaSistema": "content_7",
       "descripcionSistema": "content_7 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_8",
+      "imageUrl": "/content_8",
       "imageSistema": "content_8.jpg",
       "empresaSistema": "content_8",
       "descripcionSistema": "content_8 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_9",
+      "imageUrl": "/content_9",
       "imageSistema": "content_9.jpg",
       "empresaSistema": "content_9",
       "descripcionSistema": "content_9 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/content_10",
+      "imageUrl": "/content_10",
       "imageSistema": "content_10.jpg",
       "empresaSistema": "content_10",
       "descripcionSistema": "content_10 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/faqs_1",
+      "imageUrl": "/faqs_1",
       "imageSistema": "faqs_1.jpg",
       "empresaSistema": "faqs_1",
       "descripcionSistema": "faqs_1 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/pricing_1",
+      "imageUrl": "/pricing_1",
       "imageSistema": "pricing_1.jpg",
       "empresaSistema": "pricing_1",
       "descripcionSistema": "pricing_1 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/contact_1",
+      "imageUrl": "/contact_1",
       "imageSistema": "contact_1.jpg",
       "empresaSistema": "contact_1",
       "descripcionSistema": "contact_1 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/contact_2",
+      "imageUrl": "/contact_2",
       "imageSistema": "contact_2.jpg",
       "empresaSistema": "contact_2",
       "descripcionSistema": "contact_2 description."
     },
     {
-      "imageUrl": "https://boilerplate-modules.netlify.app/contact_3",
+      "imageUrl": "/contact_3",
       "imageSistema": "contact_3.jpg",
       "empresaSistema": "contact_3",
       "descripcionSistema": "contact_3 description."
