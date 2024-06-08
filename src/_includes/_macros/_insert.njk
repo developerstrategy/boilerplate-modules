@@ -105,9 +105,6 @@
   {% endfor %}
 </span>
 {% endmacro %}
-
-
-
 {% macro comentario(empresa = '', texto = '', fecha = '',img = '') %}
 <div class="google-comment">
   <div class="google-bubble mb-16">
@@ -203,20 +200,17 @@
   </div>
 </div>
 {% endmacro %}
-
-
 {% macro splitenpalabras(frase = '', type = '', animationTime='', animationDelay='' ) %}
 {% set palabras = frase.split(" ") %}
-
 <div class="word-wrap">
   {% for palabra in palabras %}
   {% if palabra.startsWith('**') %}
-  <div class="word bold {{type}} " style="animation-delay: {{ animationDelay }}ms ">{{ palabra | replace('**', '') }}
-  </div>
+  <span class="word bold {{type}} " style="animation-delay: {{ animationDelay }}ms ">{{ palabra | replace('**', '') }}
+  </span>
   {% elseif palabra == '--' %}
   {{ palabra | replace('--', '<br>') | safe }}
   {% else %}
-  <div class="word {{type}}" style="animation-delay: {{ animationDelay }}ms ">{{ palabra }}</div>
+  <span class="word {{type}}" style="animation-delay: {{ animationDelay }}ms ">{{ palabra }}</span>
   {% endif %}
   {% set animationDelay = animationDelay + animationTime %}
   {% endfor%}
@@ -385,6 +379,8 @@
   </div>
 </section>
 {% endmacro %}
+
+
 {% macro select(selectName = '', explicacion = '', dark = '') %}
 <h3 class="my-16 title-l">{{ selectName | capitalize }}</h3>
 <p class="title-xs">{{selectName }} : {{ explicacion }}</p>

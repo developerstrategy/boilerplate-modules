@@ -33,6 +33,7 @@ const currentDate = new Date().toISOString().slice(0, 10);
 const markdownTemplate = `---
 layout: _paginas/templates/${fileName}.njk
 permalink: /${fileName}/
+category: ${fileName}
 page_section: templates
 titulo: ${fileName}
 descripcion: ${fileName}

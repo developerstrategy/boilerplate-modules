@@ -47,6 +47,8 @@ Inspiración, créditos, etc.
 Este es el que hace el elemento y lo muestra en la home
 `npm run tokentemplate nombreDelToken`
 
+PAra crear las miniaturas hay que levantar el servidor , y verificar que el puerto 8082 este abierto o el que sea. 
+
 `npm run img-exporter`
 
 

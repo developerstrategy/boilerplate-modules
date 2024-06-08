@@ -12,6 +12,16 @@ layout: base.njk
   <div class="container-global mx-auto  pb-64  ">
 
     <div class="fluid-5-b mt-64 mb-32">Modules collection </div>
+
+
+<div class="row mb-32">
+  <div class="col-xs-12">
+<button class="btn btn-primary">HEROS</button>
+<button class="btn btn-primary">CONTENT</button>
+<button class="btn btn-primary">TEAM</button>
+  </div>
+</div>
+
     <ul role="list" class="list-clear flow">
       {% for file in sistemas.files %}
       {% include 'global-loop.njk' %}
