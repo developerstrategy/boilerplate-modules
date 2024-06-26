@@ -1,0 +1,187 @@
+---
+layout: base.njk
+---
+{% import "_macros/_insert.njk" as insert %}
+<style>
+
+
+  .bgbox {
+
+  width: 400px;
+  height: 400px;
+  background-color: red;
+
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+<section>
+  <div class="bgbox" style="background-image:url(https://picsum.photos/1600/800?random=100) "></div>
+
+</section>
+<section>
+  <div class="bgbox" style="background-image:url(https://picsum.photos/1600/800?random=20) "></div>
+
+</section>
+<section>
+  <div class="bgbox" style="background-image:url(https://picsum.photos/1600/800?random=30) "></div>
+
+</section>
+
+<div class="section-examples ptr-120">
+  <section class=" pbr-64 ptr-64">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 inview text-14-r">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+
+<pre><code class="language-css text-12-r">.animate-word, 
+.animate-appear, 
+.animate-box, 
+.animate-list, 
+.animate-letters
+  { overflow: hidden; span { display: inline-block; } } </code></pre>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="inview" class=" pbr-64 ptr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">.inview</h2>
+      <p>Los elementos con la clase <b class="bold">.inview</b> se harán visibles al entrar en el viewport.</p>
+      <div class="row">
+        <div class="col-xs-12 inview">Este elemento se hará visible al entrar en la vista</div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="inview"&gt;Este elemento se hará visible al entrar en la vista&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="animated-counter-w" class="ptr-64 pbr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">.animated-counter-w</h2>
+      <p>Los elementos con la clase <code>.animated-counter-w</code> animarán los contadores cuando sean visibles.</p>
+      <div class="row">
+        <div class="col-xs-12 inview animated-counter-w">
+          <div class="animated-counter1 fluid-3-b">100</div>
+          <div class="animated-counter2 fluid-2-b">200</div>
+        </div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="inview animated-counter-w"&gt;
+  &lt;div class="animated-counter1"&gt;100&lt;/div&gt;
+  &lt;div class="animated-counter2"&gt;200&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="animate-appear" class="ptr-64 pbr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">Animar Aparición</h2>
+      <p>Los elementos con la clase <code>.animate-appear</code> animarán su contenido interno al aparecer.</p>
+      <div class="row">
+        <div class="col-xs-12 animate-appear" data-delay="0.5">Animar Aparición</div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="animate-appear" data-delay="0.5"&gt;Animar Aparición&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="animate-word" class="ptr-64 pbr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">Animar Palabras</h2>
+      <p>Los elementos con la clase <code>.animate-word</code> animarán cada palabra por separado.</p>
+      <div class="row">
+        <div class="col-xs-12 animate-word" data-delay="0.5">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem ipsa veniam, temporibus voluptatum
+          incidunt aliquam velit provident deleniti illo pariatur sunt obcaecati, cumque eveniet ad. Sit eum saepe
+          aspernatur.
+        </div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="animate-word" data-delay="0.5"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quidem ipsa veniam, temporibus voluptatum incidunt aliquam velit provident deleniti illo pariatur sunt obcaecati, cumque eveniet ad. Sit eum saepe aspernatur.
+  &lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="animate-box" class="ptr-64 pbr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">Animar Caja</h2>
+      <p>Los elementos con la clase <code>.animate-box</code> animarán su aparición como una caja.</p>
+      <div class="row">
+        <div class="col-xs-12 animate-box" data-delay="0.2">Animar Caja</div>
+      </div>
+      <pre><code class="language-markup">&lt;div class="animate-box" data-delay="0.2"&gt;Animar Caja&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="animate-list" class="ptr-64 pbr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">Animar Lista</h2>
+      <p>Los elementos con la clase <code>.animate-list</code> animarán cada elemento de lista por separado.</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="animate-list" data-delay="0.3">
+            <li>Elemento de lista 1</li>
+            <li>Elemento de lista 2</li>
+            <li>Elemento de lista 3</li>
+          </ul>
+        </div>
+      </div>
+      <pre><code class="language-markup">&lt;ul class="animate-list" data-delay="0.3"&gt;
+  &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+  &lt;/ul&gt;</code></pre>
+    </div>
+  </section>
+
+  <section id="animate-letters" class="ptr-64 pbr-64">
+    <div class="container">
+      <h2 class="fluid-5-b mb-24">Animar Letras</h2>
+      <p>Los elementos con la clase <code>.animate-letters</code> animarán cada letra por separado.</p>
+      <div class="row">
+        <div class="col-xs-12 animate-letters" data-delay="0.5">
+          Animar cada letra de este texto
+        </div>
+
+
+        <div class="col-xs-12 animate-letters" data-delay="0.5">
+          Animar cada letra de este texto
+        </div>
+
+
+      </div>
+      <pre><code class="language-markup">&lt;div class="animate-letters" data-delay="0.5"&gt;
+  Animar cada letra de este texto
+  &lt;/div&gt;</code></pre>
+    </div>
+  </section>
+</div>
+
+
+
+</div>
+
+<script>
+
+</script>

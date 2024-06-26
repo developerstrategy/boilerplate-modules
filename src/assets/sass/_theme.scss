@@ -1,0 +1,42 @@
+// Colors and backgrounds
+.c-primary { color: $primary-color; }
+.c-secondary { color: $secondary-color; }
+.c-gray { color: $gray-color; }
+
+.bg-color {
+  background-color: $bg-light-color;
+  color: var(--c-bg-light);
+}
+
+.bg-dark {
+  background-color: $bg-dark-color;
+  color: var(--c-bg-dark);
+}
+
+.bg-color1 { background: #DAF2E6; }
+.bg-color2 { background: #f1f1ff; }
+.bg-color3 { background: #fef1f3; }
+.bg-color4 { background: #fff3ee; }
+.bg-colors { background-image: radial-gradient(at 20% 16%, rgba(204, 244, 245, .56) 0, transparent 50%), radial-gradient(at 80% 16%, rgba(182, 158, 224, .56) 0, transparent 50%), radial-gradient(at 0 100%, hsla(42, 75%, 77%, .56) 0, transparent 50%), radial-gradient(at 72% 80%, #e5f9fa 0, transparent 50%), radial-gradient(at 48% 56%, #eee8f8 0, transparent 50%), radial-gradient(at 88% 48%, #faf1db 0, transparent 50%); }
+.bg-geometric { background-image: url('/assets/static/images/geometric.svg'); background-blend-mode: overlay; background-size: cover; }
+
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  --size: 60%;
+  background-image: radial-gradient(circle at calc(-50% + var(--client_x)) calc(-50% + var(--client_y)), #b7dae2 0%, rgba(183, 218, 226, 0) var(--size)), radial-gradient(circle at calc(50% + var(--client_x)) calc(-50% + var(--client_y)), #adc2c9 0%, rgba(173, 194, 201, 0) var(--size)), radial-gradient(circle at calc(50% + var(--client_x)) calc(50% + var(--client_y)), #ecc098 0%, rgba(236, 192, 152, 0) var(--size)), radial-gradient(circle at calc(-50% + var(--client_x)) calc(50% + var(--client_y)), #fdf1da 0%, rgba(253, 241, 218, 0) var(--size));
+}
+
+.bold {
+  color: $accent-color;
+  @include font-bold;
+}
+
+.btn-primary {
+    color: $white-color;
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+  }

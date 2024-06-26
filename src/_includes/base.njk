@@ -11,6 +11,9 @@
     <meta name="keywords" content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
     <link rel="icon" type="image/png" href="{{ global.url }}/assets/static/favicons/apple-icon-180x180.webp" />
 
+    <link rel="stylesheet" href="/assets/css/prism.css" />
+  
+
     <style>
         :root {
       --c-gray: {{global.c_gray}};
@@ -101,6 +104,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js"></script>
+
+
+  <script type="module" src="/assets/js/prism.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+  
     <script type="module" src="/assets/js/index.js"></script>
     <script type="module" src="/assets/js/inview.js"></script>
     <script>
