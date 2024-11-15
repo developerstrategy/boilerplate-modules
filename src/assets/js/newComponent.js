@@ -53,7 +53,7 @@ layout: base-clean.njk
 ---
 
 <!-- Contenido de la plantilla ${fileName}.njk -->
-{% import "_macros/_insert.njk" as insert %}
+{% import "_macros/insert.njk" as insert %}
 
 `;
 

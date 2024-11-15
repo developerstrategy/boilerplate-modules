@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 ---
-{% import "_macros/_insert.njk" as insert %}
+{% import "_macros/insert.njk" as insert %}
 <div class="video-bg">
   {# <video poster="" autoplay="" muted="" loop="">
     <source src="/assets/static/main.mp4" type="video/mp4" />
@@ -13,7 +13,7 @@ layout: base.njk
 
 
 
-<section class="ptr-120 pbr-120 inview" >
+<section class="ptr-120 pbr-120 inview" data-scroll-section  >
   <div class="container-global mx-auto  pbr-120">
     <div class="fluid-8-r c-secondary">Que hacemos? </div>
   </div>
@@ -31,7 +31,7 @@ layout: base.njk
 
 
 
-<section class="front-section ptr-120 ">
+<section class="front-section ptr-120 " data-scroll-section >
 {% for persona in global.personas %}
 
     <div class="container-5 mx-auto  pb-64 front-section">

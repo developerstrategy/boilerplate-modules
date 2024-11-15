@@ -51,7 +51,7 @@ const nunjucksTemplate = `---
 layout: base.njk
 ---
 {% import "_macros/_token.njk" as tokens %}
-{% import "_macros/_insert.njk" as insert %}
+{% import "_macros/insert.njk" as insert %}
 
 <div class="container-fluid">
 dsfdsfdfsdfdsf

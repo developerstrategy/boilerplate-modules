@@ -46,7 +46,7 @@
     content="{{ metaKeywords or eleventyComputed.metaKeywords or metaKeywords.description }}" />
 </head>
 <body class="contain guide ">
-  {% import "_macros/_insert.njk" as insert %}
+  {% import "_macros/insert.njk" as insert %}
   <main>
     {{ content | safe }}
 

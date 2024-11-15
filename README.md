@@ -51,6 +51,8 @@ PAra crear las miniaturas hay que levantar el servidor , y verificar que el puer
 
 `npm run img-exporter`
 
+ npx npm-check-updates -u
+
 
 
 
