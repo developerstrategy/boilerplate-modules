@@ -1,0 +1,185 @@
+---
+layout: base.njk
+---
+{% import "_macros/insert.njk" as insert %}
+
+<style>
+  body {
+    padding-top: 15px;
+  }
+  div {
+    width: 400px;
+  }
+  label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 3px;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    width: 200px;
+  }
+  label[for=comments] {
+    margin-bottom: 0;
+  }
+  textarea {
+    height: 30px;
+    vertical-align: middle;
+  }
+  .buttons {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .errorMessages {
+    display: none;
+    list-style-type: disc;
+    margin: 0 10px 15px 10px;
+    padding: 8px 35px 8px 30px;
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 2px solid #EED3D7;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+  .errorMessages span {
+    font-weight: bold;
+  }
+  /* Estilo para campos con error */
+  input.error,
+  textarea.error {
+    border-color: red;
+    background-color: #ffe6e6;
+  }
+</style>
+
+<section class="height-xl ptr-120">
+  <div class="container-2">
+    <form
+      name="contactaformulario"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      id="contactForm"
+    >
+      <div style="display:none;">
+        <input type="text" name="EmailSecurizado" value="">
+      </div>
+      <p class="hidden">
+        <label>
+          <input name="bot-field" />
+        </label>
+      </p>
+
+      <ul class="errorMessages"></ul>
+      <div>
+        <label for="name">Nombre:</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="surname">Apellidos:</label>
+        <input id="surname" name="surname" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div>
+        <label for="mobile">Móvil:</label>
+        <input id="mobile" name="mobile" type="tel" required>
+      </div>
+      <div>
+        <label for="localName">Nombre del local:</label>
+        <input id="localName" name="localName" type="text" required>
+      </div>
+      <div>
+        <label for="localAddress">Dirección del local:</label>
+        <input id="localAddress" name="localAddress" type="text" required>
+      </div>
+      <div>
+        <label for="comments">Comentarios:</label>
+        <textarea id="comments" name="comments" required></textarea>
+      </div>
+      <div>
+        <label for="termsCheckbox">
+          <input id="termsCheckbox" type="checkbox" required> Acepto los términos y condiciones
+        </label>
+      </div>
+      <div class="buttons">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <div id="modalMensajeEnviado" style="display: none;">
+      <p>¡Mensaje enviado con éxito!</p>
+      <button onclick="document.getElementById('modalMensajeEnviado').style.display='none'">Cerrar</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevenir envío normal del formulario
+
+      const form = event.target;
+      const errorMessages = document.querySelector('.errorMessages');
+      const inputs = form.querySelectorAll('input, textarea');
+      let hasErrors = false;
+
+      errorMessages.innerHTML = '';
+      errorMessages.style.display = 'none';
+
+      // Validar campos
+      inputs.forEach(input => {
+        if (!input.checkValidity()) {
+          const label = form.querySelector(`label[for=${input.id}]`).textContent;
+          const message = input.validationMessage || 'Valor inválido.';
+          errorMessages.innerHTML += `<li><span>${label}:</span> ${message}</li>`;
+          input.classList.add('error');
+          hasErrors = true;
+        } else {
+          input.classList.remove('error');
+        }
+      });
+
+      // Validar checkbox de términos
+      const termsCheckbox = document.getElementById('termsCheckbox');
+      if (!termsCheckbox.checked) {
+        errorMessages.innerHTML += '<li><span>Error:</span> Debes aceptar los términos y condiciones.</li>';
+        termsCheckbox.classList.add('error');
+        hasErrors = true;
+      } else {
+        termsCheckbox.classList.remove('error');
+      }
+
+      if (hasErrors) {
+        errorMessages.style.display = 'block';
+        return; // Detener envío si hay errores
+      }
+
+      enviarFormulario(form); // Enviar formulario si no hay errores
+    });
+
+    function enviarFormulario(form) {
+      const data = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        body: data
+      })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById('modalMensajeEnviado').style.display = 'flex'; // Mostrar modal de éxito
+            form.reset(); // Opcional: resetear formulario
+          } else {
+            alert('Hubo un error al enviar el mensaje.');
+          }
+        })
+        .catch(error => {
+          alert('Error al enviar el mensaje: ' + error.message);
+        });
+    }
+  </script>
+</section>
