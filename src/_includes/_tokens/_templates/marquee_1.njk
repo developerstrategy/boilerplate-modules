@@ -1,0 +1,100 @@
+---
+layout: base-clean.njk
+permalink: /marquee_1/
+page_section: token-templates
+titulo: marquee_1
+descripcion: Template de marquee con animación GSAP
+image: /assets/static/images/marquee_1.jpg
+author: autor
+date: 2024-09-03 
+tags: ["token-templates", "marquee", "animation"]
+imageAlt: marquee_1
+---
+<!-- Contenido de la plantilla marquee_1.njk -->
+{% import "_macros/insert.njk" as insert %}
+
+<section class="marquee-section">
+  <div class="marquee" data-marquee-duration="30">
+    <div class="marquee__inner">
+      <div class="marquee__content">But I must explain to you how all this mistaken idea of denouncing pleasure and praising.</div>
+    </div>
+  </div>
+  
+  <div class="marquee" data-marquee-duration="20">
+    <div class="marquee__inner">
+      <div class="marquee__content">But I must explain to you how all this mistaken idea of denouncing pleasure and praising.</div>
+    </div>
+  </div>
+</section>
+
+<style>
+.marquee-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.marquee {
+  padding: 1vw;
+  white-space: nowrap;
+}
+  
+.marquee:first-child {
+  background-color: #ee6c52;
+  transform: rotateZ(-2deg);
+}
+
+.marquee:last-child {
+  background-color: #1f1f1f;
+  transform: rotateZ(-1deg);
+}
+
+.marquee__inner {
+  display: flex;
+  gap: 20px;
+}
+
+.marquee__content {
+  color: #fff;
+  font-size: clamp(40px, 4.375vw, 70px);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+</style>
+
+<script>
+const initMarquee = () => {
+  const marquee = document.querySelectorAll('.marquee')
+  
+  if(!marquee) return
+
+  marquee.forEach(item => {
+    const marqueeInner = item.querySelector('.marquee__inner')
+    const marqueeContent = marqueeInner.querySelector('.marquee__content')
+    
+    // Duration
+    const duration = item.getAttribute('data-marquee-duration')
+    
+    // Element Clone
+    const marqueeContentClone = marqueeContent.cloneNode(true)
+    marqueeInner.append(marqueeContentClone)
+    
+    // Marquee animation
+    const marqueeContentAll = marqueeInner.querySelectorAll('.marquee__content')
+    marqueeContentAll.forEach(element => {
+      gsap.to(element, {
+          x: "-101%",
+          repeat: -1,
+          duration: duration,
+          ease: 'linear'
+      })
+    })
+  })
+}
+
+document.addEventListener('DOMContentLoaded', initMarquee)
+</script>

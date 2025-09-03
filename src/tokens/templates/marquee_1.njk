@@ -1,0 +1,104 @@
+---
+layout: base-clean.njk
+permalink: /marquee_1/
+page_section: token-templates
+titulo: marquee_1
+descripcion: Template de marquee con animación GSAP
+image: /assets/static/images/marquee_1.jpg
+author: autor
+date: 2024-09-03 
+tags: ["token-templates", "marquee", "animation"]
+imageAlt: marquee_1
+---
+<!-- Contenido de la plantilla marquee_1.njk -->
+{% import "_macros/insert.njk" as insert %}
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
+
+<section class="marquee">
+  <div class="marquee__inner" aria-hidden="true" ref="inner">
+    <div class="marquee__part">
+      food wine fish beef vegetables 
+    </div>
+    <div class="marquee__part">
+      food wine fish beef vegetables 
+    </div>
+    <div class="marquee__part">
+      food wine fish beef vegetables 
+    </div>
+    <div class="marquee__part">
+      food wine fish beef vegetables 
+    </div>
+    <div class="marquee__part">
+      food wine fish beef vegetables 
+    </div>
+    <div class="marquee__part">
+      food wine fish beef vexxxxbles 
+    </div>
+  </div>
+</section>
+
+<style>
+
+.marquee__part {
+  flex-shrink: 0;
+  padding: 0 4px;
+  font-smooth: always;
+}
+
+.marquee {
+  background: #3B7FFF;
+  color: #EEE;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.667vw;
+  padding: 32px 0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.spacer {
+  height: 150px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Verificar que GSAP esté disponible
+  if (typeof gsap === 'undefined') {
+    console.error('GSAP no está cargado');
+    return;
+  }
+
+  let currentScroll = 0;
+  let isScrollingDown = true;
+
+  let tween = gsap.to(".marquee__part", {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
+
+  gsap.set(".marquee__inner", {xPercent: -50});
+
+  window.addEventListener("scroll", function(){
+    
+    if ( window.pageYOffset > currentScroll ) {
+      isScrollingDown = true;
+    } else {
+      isScrollingDown = false;
+    }
+    
+    gsap.to(tween, {
+      timeScale: isScrollingDown ? 1 : -1
+    });
+    
+    currentScroll = window.pageYOffset
+  });
+});
+</script>

@@ -37,9 +37,9 @@ async function captureMultipleScreenshots(urls) {
       if (url.cookies) {
         await page.waitForSelector(url.cookies, { visible: true });
         await page.click(url.cookies);
-        await page.waitForTimeout(6000);
+        await new Promise(resolve => setTimeout(resolve, 6000));
       } else {
-        await page.waitForTimeout(2000);
+        await new Promise(resolve => setTimeout(resolve, 2000));
       }
 
       await page.screenshot({ path: `./src/assets/static/capturas/${url.name}` });

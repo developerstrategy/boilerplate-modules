@@ -21,7 +21,9 @@
     "template": "npm run generate-template",
     "generate-template": "node src/assets/js/newTemplate.js",
     "tokentemplate": "npm run generate-token-template",
-    "generate-token-template": "node src/assets/js/newTokenTemplate.js"
+    "generate-token-template": "node src/assets/js/newTokenTemplate.js",
+    "marqueetemplate": "npm run generate-marquee-template",
+    "generate-marquee-template": "node src/assets/js/newMarqueeTemplate.js"
 
 
   },
