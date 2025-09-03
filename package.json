@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:eleventy": "eleventy --serve --incremental",
+    "watch:eleventy": "eleventy --serve --incremental ",
     "watch:sass": "sass  --no-source-map --watch src/assets/sass:src/assets/css",
     "build:eleventy": "eleventy",
     "build:sass": "sass  --no-source-map --style=compressed src//assets/sass:src//assets/css",
